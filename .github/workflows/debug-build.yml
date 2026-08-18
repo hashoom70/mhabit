@@ -13,9 +13,10 @@ jobs:
         with:
           submodules: recursive
 
-      - uses: subosito/flutter-action@v2
-        with:
-          channel: 'stable'
+      - name: Add Flutter to PATH
+        run: echo "$GITHUB_WORKSPACE/.flutter/bin" >> $GITHUB_PATH
+
+      - run: flutter --version
 
       - run: flutter pub get
 
