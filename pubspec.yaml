@@ -136,6 +136,7 @@ mhabit_color_builder:
       cc10: "0xFF673AB7"
 
 # Dependencies specify other packages that your package needs in order to work.
+shamsi_date: ^1.0.4
 # To automatically upgrade your package dependencies to the latest versions
 # consider running `flutter pub upgrade --major-versions`. Alternatively,
 # dependencies can be manually updated by changing the version numbers below to
